@@ -26,7 +26,7 @@
 	
 	//Выполняет вычитание чисел и выводит результат
 	function getSubstraction(valueA, valueB){
-		return valueA-valueB;
+			return valueA-valueB;
 	}
 	//Выполняет умножение чисел и выводит результат
 	function getMultiplication(valueA, valueB){
@@ -35,6 +35,8 @@
 
 	//Выполняет деление чисел и выводит результат
 	function getDivision(valueA, valueB){
-		return valueA/valueB;
+		if(b != 0){
+			return valueA/valueB;
+		}
 	}
 }
