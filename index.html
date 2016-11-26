@@ -12,10 +12,10 @@
 			<div><label for="b">2-е число:</label> <input id="b" type="text" /></div>
 		</div>
 		<div class="action-buttons">
-			<input type="button" onclick="getSum()" id="sum" value="+" />
+			<input type="button" onclick="doAction('+')" id="sum" value="+" />
 			<input type="button" id="sub" value="-" />
 			<input type="button" id="mul" value="*" />
-			<input type="button" id="div" value="/" />
+			<input type="button" id="div" value="/" onclick="doAction('/')" />
 		</div>
 		<div class="result">
 			Результат: <span id="resOut"></span>
