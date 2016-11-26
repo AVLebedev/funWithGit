@@ -112,9 +112,6 @@ label {
 .note span {
 	display: block;
 }
-.textcenter {
-	text-align: center;
-}
 .item:hover>.note {
 	opacity: 1;
 }
