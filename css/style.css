@@ -1,0 +1,123 @@
+@font-face {
+	font-family: opensans-bd;
+	src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: opensans-rg;
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+h1 {
+	font-family: opensans-rg;
+	text-align: center;
+	font-size: 48px;
+	font-weight: normal;
+}
+h2 {
+	margin-bottom: 5px;
+}
+body {
+	font-family: opensans-bd;
+}
+input:hover, input:focus, input:active {
+	outline: none;
+}
+.operands {
+	width: 600px;
+	margin: 0 auto;
+}
+.operands input {
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 15px;
+	font-family: opensans-rg;
+	font-size: 22px;
+	padding: 3px 9px;
+}
+.action-buttons {
+	position: fixed;
+	top: calc(50% - 100px);
+	right: 10px;
+	height: 200px;
+	width: 50px;
+	border: 1px solid rgba(0,0,0,.3);
+	text-align: center;
+	z-index: 2;
+}
+.action-buttons input {
+	display: block;
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	font-size: 40px;
+	width: 100%;
+	height: 50px;
+	transition: .3s ease-in-out;
+}
+.action-buttons input:hover {
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,.1);
+}
+.action-buttons input:focus {
+	box-shadow: -2px 0px 3px rgba(0,0,0,.6);
+}
+.result {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 48px;
+	font-family: opensans-rg;
+	font-weight: normal;
+}
+.result span {
+	font-weight: bold;
+}
+label {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 28px;
+	font-family: opensans-rg;
+}
+.aboutus {
+	position: relative;
+	margin-top: 50px;
+}
+.aboutus:before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 100%;
+	height: 1px;
+	width: 150px;
+	background: #000;
+	left: calc(50% - 75px);
+}
+.container {
+	margin-top: 0px;
+}
+.item {
+	display: inline-block;
+	width: 33%;
+}
+.item img {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	height: 300px;
+}
+.note {
+	text-align: center;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+.note span {
+	display: block;
+}
+.item:hover>.note {
+	opacity: 1;
+}
+@media all and (max-width:1024px) {
+	.item {
+		display: block;
+		width: 100%;
+	}
+}
