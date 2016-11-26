@@ -25,7 +25,7 @@
 	}
 	
 	//Выполняет вычитание чисел и выводит результат
-	function getSubtraction(valueA, valueB){
+	function getSubstraction(valueA, valueB){
 		return valueA-valueB;
 	}
 	//Выполняет умножение чисел и выводит результат
