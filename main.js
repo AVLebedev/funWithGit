@@ -27,3 +27,4 @@ function getDivision(){
 	var res = Number(a) / Number(b);
 	document.getElementById("resOut").textContent=res;
 }
+//Юра Гондон 
